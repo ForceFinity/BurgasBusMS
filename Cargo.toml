@@ -1,0 +1,13 @@
+[package]
+name = "Burgas-bus-microservice"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-cors = "0.7.0"
+actix-web = "4.9.0"
+env_logger = "0.11.5"
+reqwest = "0.12.9"
+serde = { version = "1.0", features = ["derive"] }
+serde_derive = "1.0.215"
+serde_json = "1.0.133"
