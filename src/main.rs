@@ -2,6 +2,7 @@ use actix_cors::Cors;
 use actix_web::{http, get, App, HttpResponse, HttpServer, Responder};
 use actix_web::middleware::Logger;
 use env_logger::Env;
+use routes::get_stops::get_stops;
 use routes::most_effective_route::plan;
 mod CONFIG;
 mod structs;
@@ -28,7 +29,7 @@ async fn main() -> std::io::Result<()> {
             // )
             .wrap(Cors::permissive())
             .service(plan)
-            // .service(login)
+            .service(get_stops)
             .service(health)
     })
     .bind(format!("127.0.0.1:{}", CONFIG::PORT))?
