@@ -107,7 +107,7 @@ async fn main() -> std::io::Result<()> {
             .service(health)
             
     })
-    .bind(format!("127.0.0.1:{}", CONFIG::PORT))?
+    .bind(format!("0.0.0.0:{}", CONFIG::PORT))?
     .run()
     .await
 }
