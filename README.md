@@ -15,23 +15,17 @@ Part of the project that won 1st place at the PHEE TECH Hackathon.
 
 ## 🚀 Startup Guide 
 
-1. **Clone the repository:** 
-   ```bash 
-   git clone https://github.com/your-repo/BurgasBusMS.git 
-   cd BurgasBusMS 
-   ``` 
-
-2. **Install dependencies:** 
+1. **Install dependencies:** 
    ```bash 
    cargo build 
    ``` 
 
-4. **Start the microservice:** 
+2. **Start the microservice:** 
    ```bash 
    cargo run 
    ```
 
-7. **Monitor logs:** 
+3. **Monitor logs:** 
    - Logs are handled by **env_logger**. Ensure the `RUST_LOG` environment variable is set for different log levels. 
 
    Example: 
